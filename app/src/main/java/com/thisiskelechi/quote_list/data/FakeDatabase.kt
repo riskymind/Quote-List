@@ -1,6 +1,8 @@
 package com.thisiskelechi.quote_list.data
 
 class FakeDatabase private constructor(){
+    var quoteDao = FakeQuoteDao()
+        private set
     companion object {
         @Volatile private var instance: FakeDatabase? = null
 
